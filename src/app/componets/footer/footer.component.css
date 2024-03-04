@@ -1,0 +1,26 @@
+
+  svg{
+    padding: 1px;
+}
+footer > div{
+  user-select: none;
+}
+p{
+  user-select: none;
+}
+.animate {
+  animation: moveFromTop 2s ease-in-out infinite alternate; /* Aplicar animación */
+  animation-play-state: running; /* Asegurar que la animación se inicie automáticamente */
+}
+
+@keyframes moveFromTop {
+  0% {
+      transform: translateY(-10px); /* Mover desde arriba */
+  }
+  50% {
+      transform: translateY(10px); /* Mover hacia abajo */
+  }
+  100% {
+      transform: translateY(-10px); /* Volver arriba */
+  }
+}

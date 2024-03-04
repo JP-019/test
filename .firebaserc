@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "globalcarexport-85035",
+    "test": "globalcarexport-85035"
+  },
+  "targets": {
+    "globalcarexport-9f54e": {
+      "hosting": {
+        "angular-keep": [
+          "ppt_comercio_electronico"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

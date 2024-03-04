@@ -1,0 +1,67 @@
+.cover-container {
+    background-image: url('cover.jpg');
+    background-size: cover;
+    background-position: center; 
+    filter: brightness(60%);
+  }
+  
+  .cover-container:hover:not(:hover .btn) {
+    filter: brightness(80%);
+  }
+  
+  h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  p {
+    color: rgb(255, 255, 255);
+    font-display: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #cover {
+    color: rgb(61, 3, 252);
+  }
+  
+  #your-page {
+    color: yellow;
+  }
+  
+  .cover-container.dark {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  }
+  
+  main {
+    user-select: none;
+    transition: color 0.5s; /* Transición suave del color del texto */
+  }
+  
+  main.dark {
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  @keyframes moveFromTop {
+    0% {
+      transform: translateY(-10px); /* Mover desde arriba */
+    }
+    50% {
+      transform: translateY(10px); /* Mover hacia abajo */
+    }
+    100% {
+      transform: translateY(-10px); /* Volver arriba */
+    }
+  }
+  
+  .animate {
+    animation: moveFromTop 2s ease-in-out infinite alternate; /* Aplicar animación */
+    animation-play-state: running; /* Asegurar que la animación se inicie automáticamente */
+  }
+  
+  #cover {
+    animation-delay: 0.1s;
+  }
+  
+  #your-page {
+    animation-delay: 0.4s;
+  }
+  

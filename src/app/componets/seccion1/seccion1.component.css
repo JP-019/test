@@ -1,0 +1,31 @@
+.spikes {
+    position: relative;
+    background: #262728;
+    height: 50vh;
+  }
+  
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #262728 25%, transparent 25%), linear-gradient(225deg, #b7bbbf 25%, transparent 25%);
+    background-position: 0 0;
+  }
+  .contenedor {
+    width: 210px; /* Ancho del contenedor */
+    height: 248px; /* Altura del contenedor */
+    background-image: url('logo invertido.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen dentro del contenedor */
+    position: absolute; /* Para poder utilizar top y left */
+    top: 50%; /* Colocar el contenedor en la mitad vertical de la pantalla */
+    left: 50%; /* Colocar el contenedor en la mitad horizontal de la pantalla */
+    transform: translate(-50%, -50%); /* Mover el contenedor hacia arriba y hacia la izquierda en la mitad de su tamaño */
+  }
+  
